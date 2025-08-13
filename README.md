@@ -8,3 +8,11 @@ Sliding Window Problems List on LeetCode: A collection of problems that can be e
 https://leetcode.com/problem-list/sliding-window/
 
 
+
+GitHub Command (just to copy the command instead of typing everytime to push )
+cd "PRACTICE-QUESTIONS-of-DSA"
+git status
+git add .
+git commit -m "solution"
+git push
+

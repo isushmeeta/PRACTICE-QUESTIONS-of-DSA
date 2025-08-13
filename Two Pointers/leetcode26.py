@@ -1,26 +1,17 @@
-#leetcode26
-#remove duplicates
+#removeDuplicates26
+
 class Solution:
-    def removeDuplicates(self, nums):
-      if not nums:
-         return 0
+    def removeDuplicates(self, nums: list[int]) -> int:
+        if not nums:
+            return 0
 
-      k=1
-      for i in range(1,len(nums)):
-         if nums[i]!= nums[k-1]:
-          nums[k]= nums[i]
-          k+=1
-      
-      return k,nums[:k]
+        k = 1  # pointer for the next unique element
+        for i in range(1, len(nums)):
+            if nums[i] != nums[k-1]:
+                nums[k] = nums[i]
+                k += 1
 
-nums = [1, 1, 2]
-solution = Solution()
-length, new_nums = solution.removeDuplicates(nums)
-print("Length:", length)
-print("Array without duplicates:", new_nums)
-
-
-
+        return k 
 
 
 
