@@ -52,3 +52,21 @@ frq={}
 for i in arr2:
     frq[i] = frq.get(i, 0) + 1
 print(frq)
+
+#or 
+arr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+
+# Step 1: Create an empty dictionary to store frequencies
+frequency = {}
+
+# Step 2: Loop through each element in the array
+for num in arr:
+    # Step 3: Increase count if exists, otherwise set to 1
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+# Step 4: Print results
+for key, value in frequency.items():
+    print(f"{key} → {value} times")
