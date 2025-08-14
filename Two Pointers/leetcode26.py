@@ -15,26 +15,6 @@ class Solution:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #the below code logically okay but uses extra space not acceptable
 
 # arr=[1,1,2]
